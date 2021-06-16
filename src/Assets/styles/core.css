@@ -1,0 +1,21 @@
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#root {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: auto;
+}
