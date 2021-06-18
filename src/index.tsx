@@ -1,16 +1,19 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-);
+const reactApp = {
+  start: function ({ dealerIds }: { dealerIds: string[] }) {
+    const root = document.getElementById('root');
+    ReactDOM.render(
+      <React.StrictMode>
+        <App dealerIds={dealerIds} />
+      </React.StrictMode>,
+      root,
+    );
+  },
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+window.app = reactApp;
