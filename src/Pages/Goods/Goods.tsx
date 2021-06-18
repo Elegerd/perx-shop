@@ -3,8 +3,8 @@ import { Spinner } from 'Components';
 import React, { useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { rootActions, rootSelectors } from 'Store/ducks';
+import GoodItem from 'Components/GoodItem';
 import { Good } from 'Types/common';
-import GoodItem from './Components/GoodItem';
 
 const Goods: React.VFC = () => {
   const dispatch = useDispatch();
@@ -30,7 +30,7 @@ const Goods: React.VFC = () => {
           <Spinner size="big" />
         </div>
       ) : (
-        <div className="goods__list">
+        <div className="list goods__list">
           <h2>Goods</h2>
           {goods.map(good => (
             <GoodItem

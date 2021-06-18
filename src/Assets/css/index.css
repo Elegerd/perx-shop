@@ -5,6 +5,7 @@
 /* COMPONENTS */
 @import './components/spinner';
 @import './components/button.css';
+@import './components/good-item.css';
 
 /* PAGES */
 @import './pages/basket.css';

@@ -8,7 +8,7 @@ function* fetchGoodsFlow({ payload }: ReturnType<typeof actions.fetchGoods.reque
   try {
     const { params } = payload;
     const { data } = yield call(api.getGoods, {
-      dealer: params.dealerIds?.join(','),
+      dealers: params.dealerIds?.join(','),
     });
 
     const goods = data.map((good: Good) => ({

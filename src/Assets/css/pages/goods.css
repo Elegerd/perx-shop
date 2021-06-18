@@ -3,36 +3,3 @@
   flex-direction: column;
   flex: 1;
 }
-
-.goods__list > .goods__item:not(:last-child) {
-  border-bottom: 1px solid var(--grayLight);
-}
-
-.goods__item {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 45px 1fr auto;
-  height: 100px;
-  gap: 20px;
-  padding: 0 20px;
-}
-
-.goods__item-img {
-  width: 45px;
-  height: 45px;
-}
-
-.goods__item-basket {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-end;
-}
-
-.goods__item-counter {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  gap: 20px;
-}

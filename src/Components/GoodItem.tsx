@@ -28,17 +28,17 @@ const GoodItem: React.VFC<GoodItemProps> = ({
   );
 
   return (
-    <div className="goods__item">
-      <img src={src} alt={good.name} className="goods__item-img" />
-      <p className="goods__item-name">{good.name}</p>
-      <div className="goods__item-basket">
+    <div className="good-item">
+      <img src={src} alt={good.name} className="good-item-img" />
+      <p className="good-item__name">{good.name}</p>
+      <div className="good-item__basket">
         <span>{currency}</span>
         {!count ? (
           <UIButton icon={CartIcon} onClick={onClickAdd}>
             Add basket
           </UIButton>
         ) : (
-          <div className="goods__item-counter">
+          <div className="good-item__counter">
             <UIButton text="-" onClick={onClickRemove} />
             <span>{count}</span>
             <UIButton text="+" onClick={onClickAdd} />
