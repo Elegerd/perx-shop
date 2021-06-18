@@ -19,3 +19,15 @@ body {
   min-height: 100vh;
   -webkit-overflow-scrolling: auto;
 }
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+

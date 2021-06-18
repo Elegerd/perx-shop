@@ -1,0 +1,63 @@
+
+.good-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 45px 1fr auto;
+  height: 100px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.good-item__img {
+  width: 45px;
+  height: 45px;
+}
+
+.good-item__basket {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.good-item__counter {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.list > .good-item:not(:last-child) {
+  border-bottom: 1px solid var(--grayLight);
+}
+
+@media screen and (max-width: 768px) {
+  .good-item {
+    height: 120px;
+    grid-template-columns: 45px 1fr;
+    row-gap: 10px;
+    grid-template-areas:
+      "img name"
+      "basket basket"
+  }
+
+  .good-item__basket {
+    grid-area: basket;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  .good-item__name {
+    grid-area: name;
+  }
+
+  .good-item__img {
+    grid-area: img;
+  }
+
+  .list > .good-item:not(:last-child) {
+    padding: 10px;
+  }
+}

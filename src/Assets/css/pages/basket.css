@@ -1,0 +1,19 @@
+.basket {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.basket__total {
+  text-align: end;
+}
+
+.basket__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.basket__actions > .button:not(:last-child) {
+  margin-right: 10px;
+}

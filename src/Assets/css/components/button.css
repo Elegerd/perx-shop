@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  min-height: 44px;
+  max-height: 44px;
+  transition: background-color 0.3s ease;
+  border: 1px solid var(--grayLight);
+  padding: 0 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  opacity: 0.4;
+}
+
+.button__icon {
+  margin-right: 10px;
+}
+
+.button__icon svg {
+  width: 20px;
+  height: 20px;
+}
