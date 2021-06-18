@@ -5,7 +5,8 @@ export interface LayoutProps {
   children: React.ReactNode;
 }
 
-export interface Dealer {
+export interface Good {
+  readonly id: string;
   name: string;
   price: number;
   image: string;

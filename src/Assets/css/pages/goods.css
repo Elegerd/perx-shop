@@ -1,29 +1,38 @@
-.dealers {
+.goods {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-.dealers__list > .dealers__item:not(:last-child) {
+.goods__list > .goods__item:not(:last-child) {
   border-bottom: 1px solid var(--grayLight);
 }
 
-.dealers__item {
+.goods__item {
   display: grid;
   align-items: center;
   grid-template-columns: 45px 1fr auto;
-  height: 80px;
+  height: 100px;
   gap: 20px;
   padding: 0 20px;
 }
 
-.dealers__item-img {
+.goods__item-img {
   width: 45px;
   height: 45px;
 }
 
-.dealers__item-basket {
+.goods__item-basket {
   display: flex;
+  height: 100%;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: flex-end;
+}
+
+.goods__item-counter {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 20px;
 }

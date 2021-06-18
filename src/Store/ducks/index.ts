@@ -1,19 +1,23 @@
 import { combineReducers } from 'redux';
 import { all } from 'redux-saga/effects';
-import { dealerReducer, dealerActions, dealerSaga, dealerSelectors } from './dealers';
+import { goodsReducer, goodsActions, goodsSaga, goodsSelectors } from './goods';
+import { basketReducer, basketActions, basketSelectors } from './basket';
 
 export function* rootSaga() {
-  yield all([dealerSaga()]);
+  yield all([goodsSaga()]);
 }
 
 export const rootReducer = combineReducers({
-  dealers: dealerReducer,
+  goods: goodsReducer,
+  basket: basketReducer,
 });
 
 export const rootActions = {
-  dealers: dealerActions,
+  goods: goodsActions,
+  basket: basketActions,
 };
 
 export const rootSelectors = {
-  dealers: dealerSelectors,
+  goods: goodsSelectors,
+  basket: basketSelectors,
 };

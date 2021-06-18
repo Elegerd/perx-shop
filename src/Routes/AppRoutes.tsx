@@ -13,9 +13,9 @@ const AppRoutes: React.VFC = () => {
     <DOMRouter history={History}>
       <Switch>
         <Route layout={Layouts.MainLayout} path={BaseRoutes.ROOT}>
-          <Route exact component={Pages.Dealers} path={BaseRoutes.DEALERS} />
+          <Route exact component={Pages.Goods} path={BaseRoutes.GOODS} />
           <Route exact component={Pages.Basket} path={BaseRoutes.BASKET} />
-          <Redirect to={BaseRoutes.DEALERS} />
+          <Redirect to={BaseRoutes.GOODS} />
         </Route>
       </Switch>
     </DOMRouter>

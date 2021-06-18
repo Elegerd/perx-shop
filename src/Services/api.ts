@@ -1,5 +1,6 @@
+import { Good } from 'Types/common';
 import httpClient from './httpClient';
 
-export const getDealers = (params) => {
-  return httpClient.get('/goods', { params });
+export const getGoods = params => {
+  return httpClient.get<Good[]>('/goods', { params });
 };
