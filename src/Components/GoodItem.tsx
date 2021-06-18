@@ -29,7 +29,7 @@ const GoodItem: React.VFC<GoodItemProps> = ({
 
   return (
     <div className="good-item">
-      <img src={src} alt={good.name} className="good-item-img" />
+      <img src={src} alt={good.name} className="good-item__img" />
       <p className="good-item__name">{good.name}</p>
       <div className="good-item__basket">
         <span>{currency}</span>
