@@ -1,0 +1,14 @@
+@import './reset.css';
+@import './core.css';
+@import './colors.css';
+
+/* COMPONENTS */
+@import './components/spinner';
+@import './components/button.css';
+
+/* PAGES */
+@import './pages/basket.css';
+@import './pages/dealers.css';
+
+/* LAYOUTS */
+@import './layouts/main-layout.css';

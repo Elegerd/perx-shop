@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Router as DOMRouter, Redirect } from 'react-router-dom';
 
-import History from 'Services/History';
+import History from 'Services/history';
 import { Route } from 'Routes';
 import * as Layouts from 'Layouts';
 import * as Pages from 'Pages';
